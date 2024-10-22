@@ -1,11 +1,13 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
 
-function App() {
-  return (
-    <>
-      <h1 className="text-emerald-300 underline font-bold">{`Daniel's Portfolio`}</h1>
-    </>
-  )
+export default function App() {
+    return (
+        <div className="App">
+            <header className="App-header"></header>
+            <div>
+                <Outlet />
+            </div>
+        </div>
+    )
 }
-
-export default App
