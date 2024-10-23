@@ -5,7 +5,11 @@
 /* background-color: #242424; */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    @apply w-[90%] max-w-[1400px] mx-auto py-[2rem];
 }

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Geist Sans';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./geist-font-1.4.01/fonts/Geist/otf/Geist-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Geist Sans';
+    font-weight: 500;
+    font-style: normal;
+    src: url('./geist-font-1.4.01/fonts/Geist/otf/Geist-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Geist Sans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('./geist-font-1.4.01/fonts/Geist/otf/Geist-SemiBold.otf');
+}

@@ -9,7 +9,11 @@ export default {
             xl: '1280px',
             '2xl': '1536px',
         },
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ['Geist Sans', 'sans-serif'],
+            },
+        },
     },
     plugins: [],
 }
