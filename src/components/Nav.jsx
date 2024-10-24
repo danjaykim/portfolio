@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import MenuButton from './MenuButton'
+import NavLinks from './NavLinks'
 
 const navLinks = [
     { title: 'about', href: '/' },
@@ -20,7 +21,7 @@ export default function Nav() {
     return (
         <nav className="container flex justify-between items-center md:mt-4 relative">
             <Link
-                onClick={() => setOpen((prevState) => !prevState)}
+                onClick={() => setOpen(false)}
                 to="/"
                 className="
                     text-3xl 
@@ -34,56 +35,18 @@ export default function Nav() {
             </Link>
 
             {/* Desktop Links */}
-            <ul className="hidden md:flex md:mt-3">
-                {navLinks.map((link, index) => {
-                    return (
-                        <li key={index}>
-                            <Link
-                                to={link.href}
-                                className="
-                                    font-sans 
-                                    font-semibold 
-                                    tracking-tight 
-                                    text-[1.1rem] 
-                                    text-slate-800 
-                                    hover:text-slate-900
-                                    hover:bg-zinc-100 
-                                    py-2 px-4 
-                                    rounded-lg"
-                            >
-                                {link.title}
-                            </Link>
-                        </li>
-                    )
-                })}
-            </ul>
+            <NavLinks className="hidden md:flex md:mt-3" />
 
             {/* Hamburger Menu - md:hidden */}
             <MenuButton open={open} setOpen={setOpen} />
 
             {/* Mobile Link Menu */}
             {open && (
-                <ul
-                    className="
-                        fixed inset-0 
-                        bg-white 
-                        flex flex-col justify-center items-center gap-8 
-                        md:hidden"
-                >
-                    {navLinks.map((link, index) => {
-                        return (
-                            <li key={index}>
-                                <Link
-                                    onClick={() => setOpen(false)}
-                                    to={link.href}
-                                    className="text-4xl font-bold text-slate-600 hover:text-slate-900"
-                                >
-                                    {link.title}
-                                </Link>
-                            </li>
-                        )
-                    })}
-                </ul>
+                <NavLinks
+                    isMobile={true}
+                    onLinkClick={() => setOpen(false)}
+                    className="fixed inset-0 bg-white flex flex-col justify-center items-center gap-8 md:hidden"
+                />
             )}
         </nav>
     )
