@@ -12,6 +12,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Geist Sans', 'sans-serif'],
+                inter: ['Inter', 'sans-serif'],
             },
         },
     },

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import MenuButton from './MenuButton'
 
 const navLinks = [
-    { title: 'About', href: '/' },
-    { title: 'Projects', href: '/' },
-    { title: 'Contact', href: '/' },
+    { title: 'about', href: '/' },
+    { title: 'projects', href: '/' },
+    { title: 'contact', href: '/' },
 ]
 
 export default function Nav() {
@@ -22,17 +22,37 @@ export default function Nav() {
             <Link
                 onClick={() => setOpen((prevState) => !prevState)}
                 to="/"
-                className="text-3xl font-sans font-bold tracking-tighter text-slate-700 z-10 sm:text-3xl md:text-4xl"
+                className="
+                    text-3xl 
+                    font-sans font-bold 
+                    tracking-tighter 
+                    text-slate-700 hover:text-slate-800 
+                    z-10 
+                    md:text-4xl"
             >
                 Daniel Kim
             </Link>
 
             {/* Desktop Links */}
-            <ul className="hidden md:flex">
+            <ul className="hidden md:flex md:mt-3">
                 {navLinks.map((link, index) => {
                     return (
                         <li key={index}>
-                            <Link to={link.href}>{link.title}</Link>
+                            <Link
+                                to={link.href}
+                                className="
+                                    font-sans 
+                                    font-semibold 
+                                    tracking-tight 
+                                    text-[1.1rem] 
+                                    text-slate-800 
+                                    hover:text-slate-900
+                                    hover:bg-zinc-100 
+                                    py-2 px-4 
+                                    rounded-lg"
+                            >
+                                {link.title}
+                            </Link>
                         </li>
                     )
                 })}
@@ -43,13 +63,20 @@ export default function Nav() {
 
             {/* Mobile Link Menu */}
             {open && (
-                <ul className="fixed inset-0 bg-white flex flex-col justify-center overscroll-none items-center gap-4 md:hidden">
+                <ul
+                    className="
+                        fixed inset-0 
+                        bg-white 
+                        flex flex-col justify-center items-center gap-8 
+                        md:hidden"
+                >
                     {navLinks.map((link, index) => {
                         return (
                             <li key={index}>
                                 <Link
                                     onClick={() => setOpen(false)}
                                     to={link.href}
+                                    className="text-4xl font-bold text-slate-600 hover:text-slate-900"
                                 >
                                     {link.title}
                                 </Link>
