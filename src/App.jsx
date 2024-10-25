@@ -3,8 +3,8 @@ import Nav from './components/Nav'
 
 export default function App() {
     return (
-        <div className="App dark:bg-slate-800 min-h-screen">
-            <header className="pt-4">
+        <div className="dark:bg-[#162028] min-h-screen pt-4">
+            <header>
                 <Nav />
             </header>
             <div>
