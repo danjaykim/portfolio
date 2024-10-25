@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import DarkModeProvider from './components/DarkModeProvider.jsx'
 import App from './App.jsx'
 import './index.css'
 import './fonts/fonts.css'
@@ -22,6 +23,8 @@ console.table(import.meta.env)
 const root = ReactDOM.createRoot(rootElement)
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <DarkModeProvider>
+            <RouterProvider router={router} />
+        </DarkModeProvider>
     </React.StrictMode>
 )

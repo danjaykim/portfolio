@@ -1,11 +1,10 @@
 import { Outlet } from 'react-router-dom'
 import Nav from './components/Nav'
-import './App.css'
 
 export default function App() {
     return (
-        <div className="App">
-            <header className="App-header">
+        <div className="App dark:bg-slate-800 min-h-screen">
+            <header className="pt-4">
                 <Nav />
             </header>
             <div>

@@ -14,7 +14,11 @@ export default {
                 sans: ['Geist Sans', 'sans-serif'],
                 inter: ['Inter', 'sans-serif'],
             },
+            colors: {
+                dkgray: 'rgb(29,29,29)',
+            },
         },
     },
     plugins: [],
+    darkMode: 'class',
 }

@@ -6,7 +6,7 @@ export default function MenuButton({ open, setOpen }) {
     return (
         <motion.button
             onClick={() => setOpen((prevState) => !prevState)}
-            className="relative h-14 w-14 md:hidden z-10"
+            className="relative h-14 w-14 z-10 md:hidden"
             animate={open ? 'open' : 'closed'}
             initial={false}
         >

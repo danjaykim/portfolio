@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+import { useDarkMode } from '../hooks/useDarkMode'
 
-export default function NavLinks({ className, onLinkClick, isMobile }) {
+export default function NavLinks({ className, onLinkClick, isMobile, open }) {
+    const { darkMode, toggleDarkMode } = useDarkMode()
     const navLinks = [
         { title: 'about', href: '/' },
         { title: 'projects', href: '/' },
@@ -26,6 +28,14 @@ export default function NavLinks({ className, onLinkClick, isMobile }) {
                     </li>
                 )
             })}
+            {open && (
+                <button
+                    onClick={toggleDarkMode}
+                    className="mt-4 font-semibold bg-slate-600 hover:bg-slate-700 h-14 w-14 rounded-full text-white text-lg dark:text-black dark:border-2 dark:bg-white"
+                >
+                    {darkMode ? 'lt' : 'dk'}
+                </button>
+            )}
         </ul>
     )
 }
