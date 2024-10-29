@@ -13,6 +13,8 @@ export default {
             fontFamily: {
                 sans: ['Geist Sans', 'sans-serif'],
                 inter: ['Inter', 'sans-serif'],
+                dm: ['DM Serif Text', 'serif'],
+                invasion: ['Invasion2000', 'serif'],
             },
             colors: {
                 dkgray: 'rgb(29,29,29)',

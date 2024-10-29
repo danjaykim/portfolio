@@ -18,3 +18,10 @@
     font-style: normal;
     src: url('./geist-font-1.4.01/fonts/Geist/otf/Geist-SemiBold.otf');
 }
+
+@font-face {
+    font-family: 'Invasion2000';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./invasion2000/INVASION2000.TTF');
+}

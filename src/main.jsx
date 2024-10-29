@@ -5,11 +5,18 @@ import DarkModeProvider from './components/DarkModeProvider.jsx'
 import App from './App.jsx'
 import './index.css'
 import './fonts/fonts.css'
+import LandingPage from './components/LandingPage.jsx'
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
+        children: [
+            {
+                index: true,
+                element: <LandingPage />,
+            },
+        ],
     },
 ])
 

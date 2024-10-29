@@ -20,7 +20,7 @@ export default function Nav() {
                 onClick={() => setOpen(false)}
                 to="/"
                 className="text-3xl font-sans font-bold tracking-tighter text-slate-700 
-                hover:text-slate-800 z-10 md:text-4xl dark:text-neutral-200 dark:hover:text-neutral-100"
+                hover:text-slate-800 z-50 md:text-4xl dark:text-neutral-200 dark:hover:text-neutral-100"
             >
                 Daniel Kim
             </Link>
@@ -45,7 +45,7 @@ export default function Nav() {
                     open={open}
                     isMobile={true}
                     onLinkClick={() => setOpen(false)}
-                    className="fixed inset-0 bg-white flex flex-col justify-center items-center gap-8 md:hidden dark:bg-[#162028]"
+                    className="fixed inset-0 bg-white flex flex-col justify-center items-center gap-8 md:hidden dark:bg-[#162028] z-40"
                 />
             )}
         </nav>
