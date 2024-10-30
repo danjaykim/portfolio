@@ -3,7 +3,7 @@ import Nav from './components/Nav'
 
 export default function App() {
     return (
-        <div className="dark:bg-[#162028] min-h-screen pt-4">
+        <div className="bg-light-bg dark:bg-dark-bg min-h-screen pt-4">
             <header>
                 <Nav />
             </header>

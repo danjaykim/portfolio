@@ -20,7 +20,7 @@ export default function Nav() {
                 onClick={() => setOpen(false)}
                 to="/"
                 className="text-3xl font-sans font-bold tracking-tighter text-slate-700 
-                hover:text-slate-800 z-50 md:text-4xl dark:text-neutral-200 dark:hover:text-neutral-100"
+                hover:text-slate-800 z-50 md:text-4xl dark:text-neutral-300 dark:hover:text-neutral-100"
             >
                 Daniel Kim
             </Link>
@@ -30,7 +30,7 @@ export default function Nav() {
                 <NavLinks className="md:flex" />
                 <button
                     onClick={toggleDarkMode}
-                    className="font-bold bg-slate-700 h-10 w-10 rounded-full text-white text-sm dark:text-black dark:bg-neutral-100"
+                    className="font-bold bg-slate-700 h-10 w-10 rounded-full text-slate-100 text-sm dark:text-black dark:bg-neutral-200"
                 >
                     {darkMode ? 'lt' : 'dk'}
                 </button>
@@ -45,7 +45,7 @@ export default function Nav() {
                     open={open}
                     isMobile={true}
                     onLinkClick={() => setOpen(false)}
-                    className="fixed inset-0 bg-white flex flex-col justify-center items-center gap-8 md:hidden dark:bg-[#162028] z-40"
+                    className="fixed inset-0 bg-light-bg flex flex-col justify-center items-center gap-8 md:hidden dark:bg-dark-bg z-40"
                 />
             )}
         </nav>

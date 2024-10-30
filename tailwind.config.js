@@ -16,8 +16,9 @@ export default {
                 dm: ['DM Serif Text', 'serif'],
                 invasion: ['Invasion2000', 'serif'],
             },
-            colors: {
-                dkgray: 'rgb(29,29,29)',
+            backgroundImage: {
+                'light-bg': "url('/Texturelabs_Stone_159L.jpg')",
+                'dark-bg': "url('/Texturelabs_Grunge_208M.jpg')",
             },
         },
     },
