@@ -10,7 +10,7 @@ export default function DarkModeProvider({ children }) {
     }
     return (
         <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
-            <div className={darkMode && 'dark'}>{children}</div>
+            <div className={darkMode ? 'dark' : ''}>{children}</div>
         </DarkModeContext.Provider>
     )
 }

@@ -3,13 +3,11 @@ import Nav from './components/Nav'
 
 export default function App() {
     return (
-        <div className="bg-light-bg dark:bg-dark-bg min-h-screen pt-4">
+        <div className="bg-light-bg dark:bg-dark-bg bg-fixed min-h-screen">
             <header>
                 <Nav />
             </header>
-            <div>
-                <Outlet />
-            </div>
+            <Outlet />
         </div>
     )
 }

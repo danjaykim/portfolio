@@ -12,5 +12,5 @@
 }
 
 .container {
-    @apply w-[90%] max-w-[1400px] mx-auto py-[2rem];
+    @apply w-[90%] max-w-[1400px] mx-auto;
 }
