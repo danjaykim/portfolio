@@ -1,33 +1,28 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDarkMode } from '../hooks/useDarkMode'
+// import { debounce } from 'lodash'
 import MenuButton from './MenuButton'
 import NavLinks from './NavLinks'
 
-export default function Nav() {
-    const [open, setOpen] = useState(false)
+export default function Nav({ open, setOpen }) {
     const [navBackground, setNavBackground] = useState(false)
     const { darkMode, toggleDarkMode } = useDarkMode()
-    console.log(navBackground)
 
     useEffect(() => {
-        if (open) document.body.classList.add('overflow-hidden')
-        else document.body.classList.remove('overflow-hidden')
-        // return () => document.body.classList.remove('overflow-hidden')
-    }, [open])
-
-    useEffect(() => {
-        const handleScroll = () => setNavBackground(window.scrollY > 100)
+        // const handleScroll = debounce(() => setNavBackground(scrollY > 100), 50)
+        const handleScroll = () => setNavBackground(scrollY > 100)
         window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
     return (
         <nav
-            className={`fixed z-50 w-full transition-colors duration-300 
+            className={`fixed z-50 w-full transition-all duration-300
             ${
                 navBackground
-                    ? 'py-2 bg-stone-200/90 dark:bg-neutral-800/90 transition-all ease-in'
-                    : 'py-8 transition-all ease-out'
+                    ? 'py-1 md:py-3 bg-stone-200/90 dark:bg-neutral-800/90 ease-in'
+                    : 'py-8 ease-out'
             }`}
         >
             <div className="container flex justify-between items-center relative">
