@@ -12,5 +12,5 @@
 }
 
 .container {
-    @apply w-[90%] max-w-[1400px] mx-auto;
+    @apply w-[80%] sm:w-[80%] md:w-[90%] lg:max-w-[1400px] mx-auto;
 }

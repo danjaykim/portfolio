@@ -10,7 +10,7 @@ export default function NavLinks({
 }) {
     const { darkMode, toggleDarkMode } = useDarkMode()
     const navLinks = [
-        { title: 'about', href: '/' },
+        { title: 'about', href: '/about' },
         { title: 'projects', href: '/' },
         { title: 'contact', href: '/' },
     ]

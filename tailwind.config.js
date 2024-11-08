@@ -15,6 +15,9 @@ export default {
                 inter: ['Inter', 'sans-serif'],
                 dm: ['DM Serif Text', 'serif'],
                 invasion: ['Invasion2000', 'serif'],
+                fira: ['Fira Sans', 'sans-serif'],
+                open: ['Open Sans', 'sans-serif'],
+                mengka: ['Mengka', 'sans-serif'],
             },
             backgroundImage: {
                 'light-bg': "url('/Texturelabs_Stone_159L.jpg')",

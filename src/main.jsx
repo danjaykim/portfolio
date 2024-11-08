@@ -6,6 +6,7 @@ import App from './App.jsx'
 import './index.css'
 import './fonts/fonts.css'
 import LandingPage from './components/LandingPage.jsx'
+import About from './components/About.jsx'
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <LandingPage />,
+            },
+            {
+                path: '/about',
+                element: <About />,
             },
         ],
     },
