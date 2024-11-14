@@ -1,4 +1,72 @@
 export default function About() {
+    const techSkills = [
+        {
+            name: 'JavaScript',
+            iconClass: 'devicon-javascript-plain',
+            color: '#fcba03',
+        },
+        {
+            name: 'Python',
+            iconClass: 'devicon-python-plain',
+            color: '#FFD23C',
+        },
+        {
+            name: 'HTML5',
+            iconClass: 'devicon-html5-plain',
+            color: '#E14422',
+        },
+        {
+            name: 'CSS3',
+            iconClass: 'devicon-css3-plain',
+            color: '#1567AD',
+        },
+        {
+            name: 'React',
+            iconClass: 'devicon-react-plain',
+            color: '#56D5FA',
+        },
+        {
+            name: 'FastAPI',
+            iconClass: 'devicon-fastapi-plain',
+            color: '#058D7F',
+        },
+        {
+            name: 'Django',
+            iconClass: 'devicon-django-plain',
+            color: '#0D291D',
+        },
+        {
+            name: 'PostgreSQL',
+            iconClass: 'devicon-postgresql-plain',
+            color: '#2D5C86',
+        },
+        {
+            name: 'MongoDB',
+            iconClass: 'devicon-mongodb-plain',
+            color: '#46A039',
+        },
+        {
+            name: 'Tailwind',
+            iconClass: 'devicon-tailwindcss-plain',
+            color: '#31B5F7',
+        },
+        {
+            name: 'Bootstrap',
+            iconClass: 'devicon-bootstrap-plain',
+            color: '#6627F8',
+        },
+        {
+            name: 'Docker',
+            iconClass: 'devicon-docker-plain',
+            color: '#0490BF',
+        },
+        {
+            name: 'Git',
+            iconClass: 'devicon-git-plain',
+            color: '#F14625',
+        },
+    ]
+
     return (
         <section className="bg-neutral-200/60 dark:bg-neutral-800/80 py-12">
             <h2
@@ -29,59 +97,23 @@ export default function About() {
                     <h2 className="hidden md:block font-sans text-neutral-700 text-lg text-center tracking-tight dark:text-neutral-200 mb-8">
                         technical skills
                     </h2>
-                    <div className="grid grid-cols-3 md:grid-cols-5 gap-8 md:gap-8 font-open text-6xl text-neutral-600 dark:text-neutral-200 text-center">
-                        <div className="icon-container py-3 bg-neutral-300/30 dark:bg-transparent rounded shadow-md">
-                            <i className="devicon-javascript-plain hover:text-[#fcba03]"></i>
-                            <p className="text-[.8rem] pt-1">JavaScript</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-python-plain hover:text-[#FFD23C]"></i>
-                            <p className="text-[.8rem] pt-1">Python</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-html5-plain hover:text-[#E14422]"></i>
-                            <p className="text-[.8rem] pt-1">HTML5</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-css3-plain hover:text-[#1567AD]"></i>
-                            <p className="text-[.8rem] pt-1">CSS3</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-react-plain hover:text-[#56D5FA]"></i>
-                            <p className="text-[.8rem] pt-1">React</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-fastapi-plain hover:text-[#058D7F]"></i>
-                            <p className="text-[.8rem] pt-1">FastAPI</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-django-plain hover:text-[#0D291D]"></i>
-                            <p className="text-[.8rem] pt-1">Django</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-postgresql-plain hover:text-[#2D5C86]"></i>
-                            <p className="text-[.8rem] pt-1">PostreSQL</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-mongodb-plain hover:text-[#46A039]"></i>
-                            <p className="text-[.8rem] pt-1">MongoDB</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-tailwindcss-plain hover:text-[#31B5F7]"></i>
-                            <p className="text-[.8rem] pt-1">Tailwind</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-bootstrap-plain hover:text-[#6627F8]"></i>
-                            <p className="text-[.8rem] pt-1">Bootstrap</p>
-                        </div>
-                        <div className="icon-container py-3">
-                            <i className="devicon-docker-plain hover:text-[#0490BF]"></i>
-                            <p className="text-[.8rem] pt-1">Docker</p>
-                        </div>
-                        <div className="icon-container py-3 col-span-1 col-start-2 row-start-5 md:col-start-3 md:row-start-3">
-                            <i className="devicon-git-plain hover:text-[#F14625]"></i>
-                            <p className="text-[.8rem] pt-1">Git</p>
-                        </div>
+                    <div className="grid grid-cols-3 md:grid-cols-5 gap-8 font-open text-6xl text-neutral-600 dark:text-neutral-200 text-center">
+                        {techSkills.map((skill, index) => (
+                            <div
+                                key={skill.name}
+                                className={`
+                                    icon-container 
+                                    py-3
+                                    ${index === techSkills.length - 1 ? 'col-span-1 col-start-2 row-start-5 md:col-start-3 md:row-start-3' : ''}`}
+                            >
+                                <i
+                                    className={`${skill.iconClass} hover:text-[${skill.color}]`}
+                                ></i>
+                                <p className="text-[.8rem] pt-1">
+                                    {skill.name}
+                                </p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

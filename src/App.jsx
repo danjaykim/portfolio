@@ -12,7 +12,7 @@ export default function App() {
     }, [open])
 
     return (
-        <div className="bg-light-bg dark:bg-dark-bg bg-fixed min-h-screen">
+        <div className="bg-light-bg dark:bg-dark-bg bg-fixed md:bg-cover bg-center min-h-screen">
             <header>
                 <Nav open={open} setOpen={setOpen} />
             </header>

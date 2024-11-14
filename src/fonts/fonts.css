@@ -20,15 +20,22 @@
 }
 
 @font-face {
-    font-family: 'Invasion2000';
-    font-weight: 400;
+    font-family: 'Florie';
+    font-style: 400;
     font-style: normal;
-    src: url('./invasion2000/INVASION2000.TTF');
+    src: url('./Florie.otf');
 }
 
 @font-face {
-    font-family: 'Mengka';
-    font-style: 400;
+    font-family: 'Awesome';
+    font-style: 500;
     font-style: normal;
-    src: url('./mengka.otf');
+    src: url('./Awesome/Reg/Regular/AwesomeSerif-SemiBoldRegular.otf');
+}
+
+@font-face {
+    font-family: 'Awesome';
+    font-style: 500;
+    font-style: italic;
+    src: url('./Awesome/Reg/Italic/AwesomeSerifItalic-SemBdTall.otf');
 }

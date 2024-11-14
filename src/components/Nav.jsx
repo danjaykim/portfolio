@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useDarkMode } from '../hooks/useDarkMode'
 // import { debounce } from 'lodash'
 import MenuButton from './MenuButton'
 import NavLinks from './NavLinks'
+import DarkModeButton from './DarkModeButton'
 
 export default function Nav({ open, setOpen }) {
     const [navBackground, setNavBackground] = useState(false)
-    const { darkMode, toggleDarkMode } = useDarkMode()
 
     useEffect(() => {
         // const handleScroll = debounce(() => setNavBackground(scrollY > 100), 50)
@@ -25,15 +24,16 @@ export default function Nav({ open, setOpen }) {
                     : 'py-8 ease-out'
             }`}
         >
-            <div className="container flex justify-between items-center relative">
-                <Link
+            <div className="container flex justify-between items-center">
+                {/* <Link
                     onClick={() => setOpen(false)}
                     to="/"
                     className="text-3xl font-sans font-bold tracking-tighter text-slate-700 
                 hover:text-slate-800 z-50 md:text-4xl dark:text-neutral-300 dark:hover:text-neutral-100"
                 >
                     Daniel Kim
-                </Link>
+                </Link> */}
+                <DarkModeButton />
 
                 {/* Desktop Nav Menu */}
                 <div className="hidden md:flex gap-2 items-center">
@@ -41,12 +41,6 @@ export default function Nav({ open, setOpen }) {
                         navBackground={navBackground}
                         className="md:flex"
                     />
-                    <button
-                        onClick={toggleDarkMode}
-                        className="font-bold bg-slate-700 h-10 w-10 rounded-full text-slate-100 text-sm dark:text-black dark:bg-neutral-200"
-                    >
-                        {darkMode ? 'lt' : 'dk'}
-                    </button>
                 </div>
 
                 {/* Hamburger Menu - md:hidden */}
