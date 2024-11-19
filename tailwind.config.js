@@ -16,7 +16,6 @@ export default {
                 dm: ['DM Serif Text', 'serif'],
                 fira: ['Fira Sans', 'sans-serif'],
                 open: ['Open Sans', 'sans-serif'],
-                florie: ['Florie', 'sans-serif'],
                 regular: ['Awesome', 'sans-serif'],
             },
             backgroundImage: {

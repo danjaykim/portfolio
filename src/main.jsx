@@ -8,6 +8,7 @@ import './index.css'
 import './fonts/fonts.css'
 import LandingPage from './components/LandingPage.jsx'
 import About from './components/About.jsx'
+import Projects from './components/Projects.jsx'
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About />,
+            },
+            {
+                path: '/projects',
+                element: <Projects />,
             },
         ],
     },

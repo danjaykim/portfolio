@@ -3,75 +3,75 @@ export default function About() {
         {
             name: 'JavaScript',
             iconClass: 'devicon-javascript-plain',
-            color: '#fcba03',
+            hoverColor: 'hover:text-[#fcba03]',
         },
         {
             name: 'Python',
             iconClass: 'devicon-python-plain',
-            color: '#FFD23C',
+            hoverColor: 'hover:text-[#FFD23C]',
         },
         {
             name: 'HTML5',
             iconClass: 'devicon-html5-plain',
-            color: '#E14422',
+            hoverColor: 'hover:text-[#E14422]',
         },
         {
             name: 'CSS3',
             iconClass: 'devicon-css3-plain',
-            color: '#1567AD',
+            hoverColor: 'hover:text-[#1567AD]',
         },
         {
             name: 'React',
             iconClass: 'devicon-react-plain',
-            color: '#56D5FA',
+            hoverColor: 'hover:text-[#56D5FA]',
         },
         {
             name: 'FastAPI',
             iconClass: 'devicon-fastapi-plain',
-            color: '#058D7F',
+            hoverColor: 'hover:text-[#058D7F]',
         },
         {
             name: 'Django',
             iconClass: 'devicon-django-plain',
-            color: '#0D291D',
+            hoverColor: 'hover:text-[#0D291D]',
         },
         {
             name: 'PostgreSQL',
             iconClass: 'devicon-postgresql-plain',
-            color: '#2D5C86',
+            hoverColor: 'hover:text-[#2D5C86]',
         },
         {
             name: 'MongoDB',
             iconClass: 'devicon-mongodb-plain',
-            color: '#46A039',
+            hoverColor: 'hover:text-[#46A039]',
         },
         {
             name: 'Tailwind',
             iconClass: 'devicon-tailwindcss-plain',
-            color: '#31B5F7',
+            hoverColor: 'hover:text-[#31B5F7]',
         },
         {
             name: 'Bootstrap',
             iconClass: 'devicon-bootstrap-plain',
-            color: '#6627F8',
+            hoverColor: 'hover:text-[#6627F8]',
         },
         {
             name: 'Docker',
             iconClass: 'devicon-docker-plain',
-            color: '#0490BF',
+            hoverColor: 'hover:text-[#0490BF]',
         },
         {
             name: 'Git',
             iconClass: 'devicon-git-plain',
-            color: '#F14625',
+            hoverColor: 'hover:text-[#F14625]',
         },
     ]
 
     return (
-        <section className="bg-neutral-200/60 dark:bg-neutral-800/80 py-12">
+        <section className="bg-neutral-200/50 dark:bg-neutral-900/70 py-12 md:py-20">
             <h2
                 className="hidden md:block font-inter
-                text-neutral-700 text-3xl md:text-4xl text-center tracking-tight dark:text-neutral-200 mb-14"
+                text-neutral-700 text-4xl text-center dark:text-neutral-200 mb-14 md:mb-20"
             >
                 about me
             </h2>
@@ -84,9 +84,31 @@ export default function About() {
                         background
                     </h2>
                     <div className="font-open dark:text-stone-300 font-light tracking-wide leading-relaxed">
-                        <p className="mb-5">Filler</p>
-                        <p className="mb-5">Filler</p>
-                        <p>Filler</p>
+                        <p className="mb-5">
+                            As a software engineer, I love bringing ideas to
+                            life. Combining my technical knowledge with a keen
+                            eye for design, I aim to create products and
+                            services that are not only efficient and scalable
+                            behind the scenes, but also engaging and visually
+                            appealing. My attention to detail and dedication to
+                            perfection ensure that every application is met with
+                            the highest standard.
+                        </p>
+                        <p className="mb-5">
+                            My experience as a former Operations Director in the
+                            automobile parts industry has equipped me to excel
+                            in high-pressure, fast-paced environments. Working
+                            collaboratively across teams, I ensure alignment
+                            with strategic goals to drive results.
+                        </p>
+                        <p>
+                            I consider myself a lifelong learner dedicated to
+                            consistently honing my skills to create impactful
+                            software solutions that drive business success. I
+                            love working on applications that challenge my
+                            technical abilities and provide opportunities to
+                            collaborate with like-minded professionals.
+                        </p>
                     </div>
                 </div>
                 <div className="hidden md:block border-r border-neutral-400 dark:border-neutral-400 h-full left-1/2 top-1/2 -translate-y-1/2 absolute"></div>
@@ -97,7 +119,7 @@ export default function About() {
                     <h2 className="hidden md:block font-sans text-neutral-700 text-lg text-center tracking-tight dark:text-neutral-200 mb-8">
                         technical skills
                     </h2>
-                    <div className="grid grid-cols-3 md:grid-cols-5 gap-8 font-open text-6xl text-neutral-600 dark:text-neutral-200 text-center">
+                    <div className="grid grid-cols-3 md:grid-cols-5 gap-8 font-open text-6xl text-[#556B2F] dark:text-neutral-200 text-center blur-[.4px]">
                         {techSkills.map((skill, index) => (
                             <div
                                 key={skill.name}
@@ -107,7 +129,7 @@ export default function About() {
                                     ${index === techSkills.length - 1 ? 'col-span-1 col-start-2 row-start-5 md:col-start-3 md:row-start-3' : ''}`}
                             >
                                 <i
-                                    className={`${skill.iconClass} hover:text-[${skill.color}]`}
+                                    className={`${skill.iconClass} ${skill.hoverColor}`}
                                 ></i>
                                 <p className="text-[.8rem] pt-1">
                                     {skill.name}

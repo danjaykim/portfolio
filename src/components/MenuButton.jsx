@@ -11,7 +11,7 @@ export default function MenuButton({ open, setOpen }) {
             initial={false}
         >
             <motion.span
-                className="absolute h-1 w-7 bg-neutral-700 dark:bg-neutral-300"
+                className="absolute h-1 w-7 bg-[#2D3C18] dark:bg-neutral-300"
                 style={{
                     left: '50%',
                     top: '35%',
@@ -30,7 +30,7 @@ export default function MenuButton({ open, setOpen }) {
                 }}
             />
             <motion.span
-                className="absolute h-1 w-7 bg-neutral-700 dark:bg-neutral-300"
+                className="absolute h-1 w-7 bg-[#2D3C18] dark:bg-neutral-300"
                 style={{
                     left: '50%',
                     top: '50%',
@@ -47,7 +47,7 @@ export default function MenuButton({ open, setOpen }) {
                 }}
             />
             <motion.span
-                className="absolute h-1 w-3.5 bg-neutral-700 dark:bg-neutral-300"
+                className="absolute h-1 w-3.5 bg-[#2D3C18] dark:bg-neutral-300"
                 style={{
                     left: 'calc(50% + 10px)',
                     bottom: '35%',
