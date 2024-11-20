@@ -68,7 +68,7 @@ export default function About() {
     ]
 
     return (
-        <section className="bg-neutral-300/50 dark:bg-[#1C2625]/60 py-12 md:py-20">
+        <section className="bg-white/50 dark:bg-[#1C2625]/60 py-12 md:py-20">
             <h2
                 className="hidden md:block font-inter
                 text-[#1a3d5e] text-base text-center dark:text-neutral-200 font-medium tracking-widest blur-[.5px] underline underline-offset-8 decoration-1 md:mb-20"
@@ -77,7 +77,7 @@ export default function About() {
             </h2>
             <div className="container relative flex flex-col md:flex-row md:justify-between md:gap-14">
                 <div className="about-content mb-12 md:mb-0 md:w-[50%]">
-                    <h2 className="md:hidden font-inter font-medium text-[#1a3d5e] text-[1rem] text-center tracking-widest dark:text-neutral-200 blur-[.4px] underline underline-offset-8 mb-10">
+                    <h2 className="md:hidden font-inter font-medium text-[#1a3d5e] text-[1rem] text-center tracking-widest dark:text-neutral-200 blur-[.5px] underline underline-offset-8 mb-10">
                         ABOUT ME
                     </h2>
                     <h2 className="hidden md:block font-inter text-[#1a3d5e] text-sm text-center tracking-wider dark:text-neutral-200 mb-8">
@@ -113,7 +113,7 @@ export default function About() {
                 </div>
                 <div className="hidden md:block border-r border-neutral-400 dark:border-neutral-400 h-full left-1/2 top-1/2 -translate-y-1/2 absolute"></div>
                 <div className="skills-content md:w-[50%]">
-                    <h2 className="md:hidden font-inter font-medium text-[#1a3d5e] text-[1rem] tracking-widest text-center dark:text-neutral-200 blur-[.4px] underline underline-offset-8 mb-10">
+                    <h2 className="md:hidden font-inter font-medium text-[#1a3d5e] text-[1rem] tracking-widest text-center dark:text-neutral-200 blur-[.5px] underline underline-offset-8 mb-10">
                         SKILLS
                     </h2>
                     <h2 className="hidden md:block font-inter text-[#1a3d5e] text-sm text-center tracking-wider dark:text-neutral-200 mb-8">

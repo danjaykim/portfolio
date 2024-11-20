@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 // import { debounce } from 'lodash'
 import MenuButton from './MenuButton'
 import NavLinks from './NavLinks'
@@ -20,7 +19,7 @@ export default function Nav({ open, setOpen }) {
             className={`fixed z-50 w-full transition-all duration-300
             ${
                 navBackground
-                    ? 'py-1 md:py-3 bg-neutral-200/80 dark:bg-neutral-900/90 ease-in'
+                    ? 'py-1 md:py-3 bg-white/80 dark:bg-neutral-900/90 ease-in'
                     : 'py-8 ease-out'
             }`}
         >

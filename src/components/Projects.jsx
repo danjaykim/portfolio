@@ -1,6 +1,6 @@
 export default function Projects() {
     return (
-        <section className="py-12 md:py-20 bg-[#C2C2BA]/60 dark:bg-neutral-900/70">
+        <section className="py-12 md:py-20 bg-[#DCE3EB]/60 dark:bg-neutral-900/70">
             <h3 className="font-inter font-medium text-base text-center text-[#1a3d5e] mb-10 dark:text-neutral-200 tracking-widest blur-[.5px] underline underline-offset-8 decoration-1 md:mb-20">
                 PROJECTS
             </h3>
@@ -8,9 +8,15 @@ export default function Projects() {
                 <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
                     <div className="md:w-1/2">
                         <div className="flex items-center gap-2 mb-1">
-                            <p className="font-open text-[1.1rem] dark:text-stone-200 tracking-wide">
-                                xCRM
-                            </p>
+                            <a
+                                href="https://github.com/Sigma-Unity-CRM/CRM-Project"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <p className="font-inter text-[1.1rem] md:text-[1.3rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
+                                    xCRM
+                                </p>
+                            </a>
                             <a
                                 href="https://github.com/Sigma-Unity-CRM/CRM-Project"
                                 target="_blank"
@@ -38,25 +44,33 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <a
-                        href="https://github.com/Sigma-Unity-CRM/CRM-Project"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full md:w-1/2"
-                    >
-                        <img
-                            src="/CRM_Schema.png"
-                            alt="SigmaCRM project schema"
-                            className="aspect-[16/9] rounded"
-                        />
-                    </a>
+                    <div className="w-full md:w-1/2">
+                        <a
+                            href="https://github.com/Sigma-Unity-CRM/CRM-Project"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="/CRM_Schema.png"
+                                alt="SigmaCRM project schema"
+                                className="aspect-[16/9] rounded"
+                            />
+                        </a>
+                    </div>
                 </div>
+                <span className="w-full h-1 border-t border-[#1a3d5e] dark:border-neutral-200 blur-[.7px] md:hidden"></span>
                 <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
                     <div className="md:w-1/2">
                         <div className="flex items-center gap-2 mb-1">
-                            <p className="font-open text-[1.1rem] dark:text-stone-200 tracking-wide">
-                                MovieKnight
-                            </p>
+                            <a
+                                href="https://github.com/kim-vuong/MovieKnight/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <p className="font-inter text-[1.1rem] md:text-[1.3rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
+                                    MovieKnight
+                                </p>
+                            </a>
                             <a
                                 href="https://github.com/kim-vuong/MovieKnight/"
                                 target="_blank"
@@ -88,12 +102,19 @@ export default function Projects() {
                         allowFullScreen
                     />
                 </div>
+                <span className="w-full h-1 border-t border-[#1a3d5e] dark:border-neutral-200 blur-[.7px] md:hidden"></span>
                 <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
                     <div className="md:w-1/2">
                         <div className="flex items-center gap-2 mb-1">
-                            <p className="font-open text-[1.1rem] dark:text-stone-200 tracking-wide">
-                                NexGenAuto
-                            </p>
+                            <a
+                                href="https://github.com/danieljaykim/nexgenauto"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <p className="font-inter text-[1.1rem] md:text-[1.3rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
+                                    NexGenAuto
+                                </p>
+                            </a>
                             <a
                                 href="https://github.com/danjaykim/nexgenauto"
                                 target="_blank"

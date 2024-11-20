@@ -1,3 +1,4 @@
+import { Element } from 'react-scroll'
 import About from './About'
 import Projects from './Projects.jsx'
 import Contact from './Contact.jsx'
@@ -22,9 +23,15 @@ export default function LandingPage() {
                     </div>
                 </div>
             </main>
-            <About />
-            <Projects />
-            <Contact />
+            <Element name="about">
+                <About />
+            </Element>
+            <Element name="projects">
+                <Projects />
+            </Element>
+            <Element name="contact">
+                <Contact />
+            </Element>
         </>
     )
 }
