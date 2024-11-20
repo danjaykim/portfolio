@@ -44,7 +44,7 @@ export default function Nav({ open, setOpen }) {
                         open={open}
                         isMobile={true}
                         onLinkClick={() => setOpen(false)}
-                        className="fixed inset-0 bg-light-bg flex flex-col justify-center items-center gap-12 md:hidden dark:bg-dark-bg z-40"
+                        className="fixed inset-0 bg-light-bg flex flex-col justify-center items-center gap-14 md:hidden dark:bg-dark-bg z-40"
                     />
                 )}
             </div>

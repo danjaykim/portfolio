@@ -1,15 +1,70 @@
 export default function Projects() {
     return (
-        <section className="py-12 md:py-20 bg-neutral-200/60 dark:bg-neutral-900/80">
-            <h3 className="text-3xl md:text-4xl font-semibold text-center mb-14 md:mb-20 dark:text-neutral-200">
-                projects
+        <section className="py-12 md:py-20 bg-[#C2C2BA]/60 dark:bg-neutral-900/70">
+            <h3 className="font-inter font-medium text-base text-center text-[#1a3d5e] mb-10 dark:text-neutral-200 tracking-widest blur-[.5px] underline underline-offset-8 decoration-1 md:mb-20">
+                PROJECTS
             </h3>
-            <div className="container flex flex-col gap-14 md:gap-24">
+            <div className="container flex flex-col gap-14 md:gap-24 text-[#1a3d5e]">
                 <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
                     <div className="md:w-1/2">
-                        <p className="font-open text-2xl dark:text-stone-200 mb-4">
-                            MovieKnight
-                        </p>
+                        <div className="flex items-center gap-2 mb-1">
+                            <p className="font-open text-[1.1rem] dark:text-stone-200 tracking-wide">
+                                xCRM
+                            </p>
+                            <a
+                                href="https://github.com/Sigma-Unity-CRM/CRM-Project"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="devicon-github-original text-3xl dark:text-neutral-200"></i>
+                            </a>
+                        </div>
+                        <div className="font-open dark:text-stone-300 font-light tracking-wide leading-relaxed">
+                            <p className="mb-2">
+                                X CRM is a solution designed to make customer
+                                relationship management accessible and efficient
+                                for small and medium-sized businesses. Our focus
+                                is on creating a user-friendly platform that
+                                integrates seamlessly with popular social
+                                channels, making it easier for businesses to
+                                manage customer interactions across multiple
+                                platforms.
+                            </p>
+                            <p>
+                                X CRM is currently under active development.
+                                We're excited about the potential impact this
+                                tool will have on making CRM more accessible and
+                                effective for SMBs. Stay tuned for updates!
+                            </p>
+                        </div>
+                    </div>
+                    <a
+                        href="https://github.com/Sigma-Unity-CRM/CRM-Project"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full md:w-1/2"
+                    >
+                        <img
+                            src="/CRM_Schema.png"
+                            alt="SigmaCRM project schema"
+                            className="aspect-[16/9] rounded"
+                        />
+                    </a>
+                </div>
+                <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
+                    <div className="md:w-1/2">
+                        <div className="flex items-center gap-2 mb-1">
+                            <p className="font-open text-[1.1rem] dark:text-stone-200 tracking-wide">
+                                MovieKnight
+                            </p>
+                            <a
+                                href="https://github.com/kim-vuong/MovieKnight/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="devicon-github-original text-3xl dark:text-neutral-200"></i>
+                            </a>
+                        </div>
                         <p className="font-open dark:text-stone-300 font-light tracking-wide leading-relaxed">
                             MovieKnight is an application for movie enthusiasts
                             who want to take their film experience to the next
@@ -35,9 +90,18 @@ export default function Projects() {
                 </div>
                 <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
                     <div className="md:w-1/2">
-                        <p className="font-open text-2xl dark:text-stone-200 mb-4">
-                            NexGenAuto
-                        </p>
+                        <div className="flex items-center gap-2 mb-1">
+                            <p className="font-open text-[1.1rem] dark:text-stone-200 tracking-wide">
+                                NexGenAuto
+                            </p>
+                            <a
+                                href="https://github.com/danjaykim/nexgenauto"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="devicon-github-original text-3xl dark:text-neutral-200"></i>
+                            </a>
+                        </div>
                         <p className="font-open dark:text-stone-300 font-light tracking-wide leading-relaxed">
                             NexGenAuto is developed for managing inventory,
                             sales, and servicing systems in car dealerships.
