@@ -1,5 +1,6 @@
 import About from './About'
 import Projects from './Projects.jsx'
+import Contact from './Contact.jsx'
 
 export default function LandingPage() {
     return (
@@ -23,6 +24,7 @@ export default function LandingPage() {
             </main>
             <About />
             <Projects />
+            <Contact />
         </>
     )
 }

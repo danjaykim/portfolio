@@ -9,6 +9,7 @@ import './fonts/fonts.css'
 import LandingPage from './components/LandingPage.jsx'
 import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
+import Contact from './components/Contact.jsx'
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path: '/projects',
                 element: <Projects />,
+            },
+            {
+                path: '/contact',
+                element: <Contact />,
             },
         ],
     },
