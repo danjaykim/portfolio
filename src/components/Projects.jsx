@@ -7,13 +7,13 @@ export default function Projects() {
             <div className="container flex flex-col gap-14 md:gap-24 text-[#1a3d5e]">
                 <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
                     <div className="md:w-1/2">
-                        <div className="flex items-center gap-2 mb-1">
+                        <div className="flex items-center gap-2 mb-3">
                             <a
                                 href="https://github.com/Sigma-Unity-CRM/CRM-Project"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <p className="font-inter text-[1.1rem] md:text-[1.3rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
+                                <p className="font-inter text-[1rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
                                     xCRM
                                 </p>
                             </a>
@@ -22,11 +22,11 @@ export default function Projects() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <i className="devicon-github-original text-3xl dark:text-neutral-200"></i>
+                                <i className="devicon-github-original text-2xl dark:text-neutral-200"></i>
                             </a>
                         </div>
-                        <div className="font-open dark:text-stone-300 font-light tracking-wide leading-relaxed">
-                            <p className="mb-2">
+                        <div className="font-open text-[.95rem] dark:text-stone-300 font-light tracking-wide leading-relaxed">
+                            <p className="mb-4">
                                 X CRM is a solution designed to make customer
                                 relationship management accessible and efficient
                                 for small and medium-sized businesses. Our focus
@@ -61,13 +61,13 @@ export default function Projects() {
                 <span className="w-full h-1 border-t border-[#1a3d5e] dark:border-neutral-200 blur-[.7px] md:hidden"></span>
                 <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
                     <div className="md:w-1/2">
-                        <div className="flex items-center gap-2 mb-1">
+                        <div className="flex items-center gap-2 mb-3">
                             <a
                                 href="https://github.com/kim-vuong/MovieKnight/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <p className="font-inter text-[1.1rem] md:text-[1.3rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
+                                <p className="font-inter text-[1rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
                                     MovieKnight
                                 </p>
                             </a>
@@ -76,10 +76,10 @@ export default function Projects() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <i className="devicon-github-original text-3xl dark:text-neutral-200"></i>
+                                <i className="devicon-github-original text-2xl dark:text-neutral-200"></i>
                             </a>
                         </div>
-                        <p className="font-open dark:text-stone-300 font-light tracking-wide leading-relaxed">
+                        <p className="font-open text-[.95rem] dark:text-stone-300 font-light tracking-wide leading-relaxed">
                             MovieKnight is an application for movie enthusiasts
                             who want to take their film experience to the next
                             level. Whether you're tracking movies watched,
@@ -105,13 +105,13 @@ export default function Projects() {
                 <span className="w-full h-1 border-t border-[#1a3d5e] dark:border-neutral-200 blur-[.7px] md:hidden"></span>
                 <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
                     <div className="md:w-1/2">
-                        <div className="flex items-center gap-2 mb-1">
+                        <div className="flex items-center gap-2 mb-3">
                             <a
                                 href="https://github.com/danieljaykim/nexgenauto"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <p className="font-inter text-[1.1rem] md:text-[1.3rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
+                                <p className="font-inter text-[1rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
                                     NexGenAuto
                                 </p>
                             </a>
@@ -120,10 +120,10 @@ export default function Projects() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <i className="devicon-github-original text-3xl dark:text-neutral-200"></i>
+                                <i className="devicon-github-original text-2xl dark:text-neutral-200"></i>
                             </a>
                         </div>
-                        <p className="font-open dark:text-stone-300 font-light tracking-wide leading-relaxed">
+                        <p className="font-open text-[.95rem] dark:text-stone-300 font-light tracking-wide leading-relaxed">
                             NexGenAuto is developed for managing inventory,
                             sales, and servicing systems in car dealerships.
                             Tailored to the unique needs of automotive

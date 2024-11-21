@@ -83,8 +83,8 @@ export default function About() {
                     <h2 className="hidden md:block font-inter text-[#1a3d5e] text-sm text-center tracking-wider dark:text-neutral-200 mb-8">
                         BACKGROUND
                     </h2>
-                    <div className="font-open text-[#1a3d5e] dark:text-stone-300 font-light tracking-wide leading-relaxed">
-                        <p className="mb-5">
+                    <div className="font-open text-[.95rem] text-[#1a3d5e] dark:text-stone-300 font-light tracking-wide leading-relaxed">
+                        <p className="mb-4 md:mb-8">
                             As a software engineer, I love bringing ideas to
                             life. Combining my technical knowledge with a keen
                             eye for design, I aim to create products and
@@ -94,7 +94,7 @@ export default function About() {
                             perfection ensure that every application is met with
                             the highest standard.
                         </p>
-                        <p className="mb-5">
+                        <p className="mb-4 md:mb-8">
                             My experience as a former Operations Director in the
                             automobile parts industry has equipped me to excel
                             in high-pressure, fast-paced environments. Working

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 // import { debounce } from 'lodash'
 import MenuButton from './MenuButton'
 import NavLinks from './NavLinks'
@@ -13,6 +14,27 @@ export default function Nav({ open, setOpen }) {
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
+
+    const menuPulldown = {
+        open: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: 'spring',
+                stiffness: 250,
+                damping: 30,
+            },
+        },
+        closed: {
+            opacity: 0.5,
+            y: '-100%',
+            transition: {
+                type: 'spring',
+                stiffness: 250,
+                damping: 30,
+            },
+        },
+    }
 
     return (
         <nav
@@ -38,14 +60,22 @@ export default function Nav({ open, setOpen }) {
                 <MenuButton open={open} setOpen={setOpen} />
 
                 {/* Mobile Menu Open */}
-                {open && (
-                    <NavLinks
-                        open={open}
-                        isMobile={true}
-                        onLinkClick={() => setOpen(false)}
-                        className="fixed inset-0 bg-light-bg flex flex-col justify-center items-center gap-14 md:hidden dark:bg-dark-bg z-40"
-                    />
-                )}
+                <motion.div
+                    initial={false}
+                    animate={open ? 'open' : 'closed'}
+                    variants={menuPulldown}
+                    className="fixed inset-0 bg-light-bg flex flex-col justify-center items-center gap-14 md:hidden dark:bg-dark-bg z-40"
+                >
+                    {open && (
+                        <NavLinks
+                            open={open}
+                            isMobile={true}
+                            onLinkClick={() => setOpen(false)}
+                            className="flex flex-col justify-center items-center gap-10
+                                transition-all duration-300"
+                        />
+                    )}
+                </motion.div>
             </div>
         </nav>
     )
