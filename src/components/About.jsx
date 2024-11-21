@@ -1,4 +1,16 @@
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+
 export default function About() {
+    const [aboutRef, aboutInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.3,
+    })
+    const [skillsRef, skillsInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.3,
+    })
+
     const techSkills = [
         {
             name: 'JavaScript',
@@ -76,7 +88,13 @@ export default function About() {
                 ABOUT ME
             </h2>
             <div className="container relative flex flex-col md:flex-row md:justify-between md:gap-14">
-                <div className="about-content mb-12 md:mb-0 md:w-[50%]">
+                <motion.div
+                    ref={aboutRef}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={aboutInView && { opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: 'easeIn' }}
+                    className="about-content mb-12 md:mb-0 md:w-[50%]"
+                >
                     <h2 className="md:hidden font-inter font-medium text-[#1a3d5e] text-[1rem] text-center tracking-widest dark:text-neutral-200 blur-[.5px] underline underline-offset-8 mb-10">
                         ABOUT ME
                     </h2>
@@ -89,30 +107,40 @@ export default function About() {
                             life. Combining my technical knowledge with a keen
                             eye for design, I aim to create products and
                             services that are not only efficient and scalable
-                            behind the scenes, but also engaging and visually
+                            behind the scenes but also engaging and visually
                             appealing. My attention to detail and dedication to
-                            perfection ensure that every application is met with
-                            the highest standard.
+                            perfection ensure that every application is designed
+                            and developed at the highest standard.
                         </p>
                         <p className="mb-4 md:mb-8">
                             My experience as a former Operations Director in the
                             automobile parts industry has equipped me to excel
-                            in high-pressure, fast-paced environments. Working
-                            collaboratively across teams, I ensure alignment
-                            with strategic goals to drive results.
+                            in high-pressure, fast-paced environments. With
+                            specialization in cross-team management and
+                            collaboration, I ensure alignment with strategic
+                            goals to deliver results.
                         </p>
                         <p>
                             I consider myself a lifelong learner dedicated to
-                            consistently honing my skills to create impactful
-                            software solutions that drive business success. I
-                            love working on applications that challenge my
-                            technical abilities and provide opportunities to
-                            collaborate with like-minded professionals.
+                            embracing new technologies to stay at the forefront
+                            of the industry and am committed to consistently
+                            honing my skills to create software solutions that
+                            drive business success.
                         </p>
                     </div>
-                </div>
+                </motion.div>
                 <div className="hidden md:block border-r border-neutral-400 dark:border-neutral-400 h-full left-1/2 top-1/2 -translate-y-1/2 absolute"></div>
-                <div className="skills-content md:w-[50%]">
+                <motion.div
+                    ref={skillsRef}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={skillsInView && { opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: 'easeIn',
+                        delay: aboutInView && skillsInView ? 0.1 : 0,
+                    }}
+                    className="skills-content md:w-[50%]"
+                >
                     <h2 className="md:hidden font-inter font-medium text-[#1a3d5e] text-[1rem] tracking-widest text-center dark:text-neutral-200 blur-[.5px] underline underline-offset-8 mb-10">
                         SKILLS
                     </h2>
@@ -137,7 +165,7 @@ export default function About() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     )

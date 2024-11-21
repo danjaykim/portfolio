@@ -1,3 +1,22 @@
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+
+function Project({ children }) {
+    const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 })
+
+    return (
+        <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView && { opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
+            className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20"
+        >
+            {children}
+        </motion.div>
+    )
+}
+
 export default function Projects() {
     return (
         <section className="py-12 md:py-20 bg-[#DCE3EB]/60 dark:bg-neutral-900/70">
@@ -5,7 +24,7 @@ export default function Projects() {
                 PROJECTS
             </h3>
             <div className="container flex flex-col gap-14 md:gap-24 text-[#1a3d5e]">
-                <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
+                <Project>
                     <div className="md:w-1/2">
                         <div className="flex items-center gap-2 mb-3">
                             <a
@@ -57,9 +76,9 @@ export default function Projects() {
                             />
                         </a>
                     </div>
-                </div>
+                </Project>
                 <span className="w-full h-1 border-t border-[#1a3d5e] dark:border-neutral-200 blur-[.7px] md:hidden"></span>
-                <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
+                <Project>
                     <div className="md:w-1/2">
                         <div className="flex items-center gap-2 mb-3">
                             <a
@@ -101,9 +120,9 @@ export default function Projects() {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
                     />
-                </div>
+                </Project>
                 <span className="w-full h-1 border-t border-[#1a3d5e] dark:border-neutral-200 blur-[.7px] md:hidden"></span>
-                <div className="project-container flex flex-col gap-6 md:flex-row md:justify-between md:gap-20">
+                <Project>
                     <div className="md:w-1/2">
                         <div className="flex items-center gap-2 mb-3">
                             <a
@@ -143,7 +162,7 @@ export default function Projects() {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
                     />
-                </div>
+                </Project>
             </div>
         </section>
     )

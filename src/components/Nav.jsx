@@ -17,8 +17,7 @@ export default function Nav({ open, setOpen }) {
 
     const menuPulldown = {
         open: {
-            opacity: 1,
-            y: 0,
+            x: 0,
             transition: {
                 type: 'spring',
                 stiffness: 250,
@@ -26,8 +25,7 @@ export default function Nav({ open, setOpen }) {
             },
         },
         closed: {
-            opacity: 0.5,
-            y: '-100%',
+            x: '100%',
             transition: {
                 type: 'spring',
                 stiffness: 250,
@@ -72,7 +70,7 @@ export default function Nav({ open, setOpen }) {
                             isMobile={true}
                             onLinkClick={() => setOpen(false)}
                             className="flex flex-col justify-center items-center gap-10
-                                transition-all duration-300"
+                                "
                         />
                     )}
                 </motion.div>
