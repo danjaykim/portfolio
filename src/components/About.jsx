@@ -103,9 +103,9 @@ export default function About() {
                     </h2>
                     <div className="font-open text-[.95rem] text-[#1a3d5e] dark:text-stone-300 font-light tracking-wide leading-relaxed">
                         <p className="mb-4 md:mb-8">
-                            As a software engineer, I love bringing ideas to
-                            life. Combining my technical knowledge with a keen
-                            eye for design, I aim to create products and
+                            As a software engineer, I absolutely love bringing
+                            ideas to life. Combining my technical knowledge with
+                            a keen eye for design, I aim to create products and
                             services that are not only efficient and scalable
                             behind the scenes but also engaging and visually
                             appealing. My attention to detail and dedication to
@@ -113,19 +113,20 @@ export default function About() {
                             and developed at the highest standard.
                         </p>
                         <p className="mb-4 md:mb-8">
-                            My experience as a former Operations Director in the
-                            automobile parts industry has equipped me to excel
-                            in high-pressure, fast-paced environments. With
-                            specialization in cross-team management and
+                            My prior experience as a former Operations Director
+                            in the automobile parts industry has equipped me to
+                            excel in high-pressure, fast-paced environments.
+                            With specialization in cross-team management and
                             collaboration, I ensure alignment with strategic
                             goals to deliver results.
                         </p>
                         <p>
-                            I consider myself a lifelong learner dedicated to
-                            embracing new technologies to stay at the forefront
-                            of the industry and am committed to consistently
-                            honing my skills to create software solutions that
-                            drive business success.
+                            I consider myself a lifelong learner, committed to
+                            continuous growth and improvement. My focus is on
+                            developing software solutions that drive business
+                            success, and I'm always looking to work with
+                            like-minded people who share my passion for creating
+                            innovative products and services.
                         </p>
                     </div>
                 </motion.div>

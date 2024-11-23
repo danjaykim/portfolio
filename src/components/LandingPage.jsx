@@ -1,9 +1,12 @@
-import { Element } from 'react-scroll'
+import { useDarkMode } from '../hooks/useDarkMode'
+import { Element, Link } from 'react-scroll'
 import About from './About'
 import Projects from './Projects.jsx'
 import Contact from './Contact.jsx'
 
 export default function LandingPage() {
+    const { darkMode } = useDarkMode()
+
     return (
         <>
             <main className="container relative flex flex-col justify-center items-center min-h-screen">
@@ -22,6 +25,22 @@ export default function LandingPage() {
                         </p>
                     </div>
                 </div>
+                <Link
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    className="absolute bottom-0 mb-4 max-w-20 md:max-w-28"
+                    offset={-55}
+                >
+                    <img
+                        src={
+                            darkMode
+                                ? '/dark_logo_transparent.png'
+                                : '/logo_transparent.png'
+                        }
+                        alt="Logo"
+                    />
+                </Link>
             </main>
             <Element name="about">
                 <About />

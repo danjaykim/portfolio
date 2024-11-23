@@ -28,7 +28,7 @@ export default function NavLinks({
                                     ? 'font-inter text-xl font-medium tracking-widest blur-[.5px] text-[#1a3d5e] hover:text-slate-900 dark:text-neutral-300 dark:hover:text-neutral-100 cursor-pointer'
                                     : `font-semibold blur-[.3px] tracking-tightest text-[.85rem] text-[#1a3d5e]
                                         py-2 px-4 rounded-lg dark:text-neutral-200 cursor-pointer
-                                        ${navBackground ? 'dark:hover:bg-neutral-600/30 hover:bg-neutral-200/50' : 'hover:bg-white/50 dark:hover:bg-neutral-700/40'}`
+                                        ${navBackground ? 'dark:hover:bg-neutral-600/30 hover:bg-neutral-200/50' : 'hover:bg-white/20 dark:hover:bg-neutral-700/40'}`
                             }
                         >
                             {link.title}

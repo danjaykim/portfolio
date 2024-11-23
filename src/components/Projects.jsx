@@ -19,7 +19,7 @@ function Project({ children }) {
 
 export default function Projects() {
     return (
-        <section className="py-12 md:py-20 bg-[#DCE3EB]/60 dark:bg-neutral-900/70">
+        <section className="py-12 md:py-20 bg-[##C9C9C9]/60 dark:bg-neutral-900/70">
             <h3 className="font-inter font-medium text-base text-center text-[#1a3d5e] mb-10 dark:text-neutral-200 tracking-widest blur-[.5px] underline underline-offset-8 decoration-1 md:mb-20">
                 PROJECTS
             </h3>

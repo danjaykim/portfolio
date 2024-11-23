@@ -69,8 +69,7 @@ export default function Nav({ open, setOpen }) {
                             open={open}
                             isMobile={true}
                             onLinkClick={() => setOpen(false)}
-                            className="flex flex-col justify-center items-center gap-10
-                                "
+                            className="flex flex-col justify-center items-center gap-10"
                         />
                     )}
                 </motion.div>
