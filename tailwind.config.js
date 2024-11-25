@@ -19,8 +19,6 @@ export default {
                 regular: ['Awesome', 'sans-serif'],
             },
             backgroundImage: {
-                // 'light-bg': "url('/jean-philippe-unsplash.jpg')",
-                // 'light-bg': "url('pawel-czerwinski-btrDojJDz0Q-unsplash.jpg')",
                 'light-bg': "url('/drew-beamer-tf-dVnIN8sk-unsplash.jpg')",
                 'dark-bg': "url('/pawel-czerwinski-5mhH4db_79I-unsplash.jpg')",
             },
