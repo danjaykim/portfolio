@@ -16,7 +16,7 @@ export default {
                 dm: ['DM Serif Text', 'serif'],
                 fira: ['Fira Sans', 'sans-serif'],
                 open: ['Open Sans', 'sans-serif'],
-                regular: ['Awesome', 'sans-serif'],
+                kiona: ['Kiona', 'sans-serif'],
             },
             backgroundImage: {
                 'light-bg': "url('/drew-beamer-tf-dVnIN8sk-unsplash.jpg')",

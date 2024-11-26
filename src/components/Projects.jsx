@@ -33,7 +33,7 @@ export default function Projects() {
                                 rel="noopener noreferrer"
                             >
                                 <p className="font-inter text-[1rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
-                                    xCRM
+                                    UnityCRM
                                 </p>
                             </a>
                             <a
@@ -46,7 +46,7 @@ export default function Projects() {
                         </div>
                         <div className="font-open text-[.95rem] dark:text-stone-300 font-light tracking-wide leading-relaxed">
                             <p className="mb-4">
-                                X CRM is a solution designed to make customer
+                                UnityCRM is a solution designed to make customer
                                 relationship management accessible and efficient
                                 for small and medium-sized businesses. Our focus
                                 is on creating a user-friendly platform that
@@ -56,7 +56,7 @@ export default function Projects() {
                                 platforms.
                             </p>
                             <p>
-                                X CRM is currently under active development.
+                                UnityCRM is currently under active development.
                                 We're excited about the potential impact this
                                 tool will have on making CRM more accessible and
                                 effective for SMBs. Stay tuned for updates!
@@ -100,7 +100,7 @@ export default function Projects() {
                         </div>
                         <p className="font-open text-[.95rem] dark:text-stone-300 font-light tracking-wide leading-relaxed">
                             MovieKnight is an application for movie enthusiasts
-                            who want to take their film experience to the next
+                            who want to take cinematic experience to the next
                             level. Whether you're tracking movies watched,
                             curating personalized watchlists, or sharing
                             reviews, MovieKnight keeps everything organized in

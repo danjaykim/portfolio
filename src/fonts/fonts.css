@@ -20,22 +20,8 @@
 }
 
 @font-face {
-    font-family: 'Florie';
+    font-family: 'Kiona';
     font-style: 400;
     font-style: normal;
-    src: url('./Florie.otf');
-}
-
-@font-face {
-    font-family: 'Awesome';
-    font-style: 500;
-    font-style: normal;
-    src: url('./Awesome/Reg/Regular/AwesomeSerif-SemiBoldRegular.otf');
-}
-
-@font-face {
-    font-family: 'Awesome';
-    font-style: 500;
-    font-style: italic;
-    src: url('./Awesome/Reg/Italic/AwesomeSerifItalic-SemBdTall.otf');
+    src: url('./Kiona/Kiona-Regular.ttf');
 }

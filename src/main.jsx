@@ -6,11 +6,10 @@ import App from './App.jsx'
 import 'boxicons'
 import './index.css'
 import './fonts/fonts.css'
-import LandingPage from './components/LandingPage.jsx'
+import Layout from './components/Layout.jsx'
 import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
-import Footer from './components/Footer.jsx'
 
 const router = createBrowserRouter([
     {
@@ -19,7 +18,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <LandingPage />,
+                element: <Layout />,
             },
             {
                 path: '/about',
@@ -32,10 +31,6 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact />,
-            },
-            {
-                path: '/footer',
-                element: <Footer />,
             },
         ],
     },

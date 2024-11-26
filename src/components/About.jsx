@@ -102,7 +102,7 @@ export default function About() {
                         BACKGROUND
                     </h2>
                     <div className="font-open text-[.95rem] text-[#1a3d5e] dark:text-stone-300 font-light tracking-wide leading-relaxed">
-                        <p className="mb-4 md:mb-8">
+                        <p className="mb-4 md:mb-5">
                             As a software engineer, I absolutely love bringing
                             ideas to life. Combining my technical knowledge with
                             a keen eye for design, I aim to create products and
@@ -112,13 +112,13 @@ export default function About() {
                             perfection ensure that every application is designed
                             and developed at the highest standard.
                         </p>
-                        <p className="mb-4 md:mb-8">
+                        <p className="mb-4 md:mb-5">
                             My prior experience as a former Operations Director
                             in the automobile parts industry has equipped me to
                             excel in high-pressure, fast-paced environments.
-                            With specialization in cross-team management and
-                            collaboration, I ensure alignment with strategic
-                            goals to deliver results.
+                            With specialization in cross-team management, I
+                            cultivate collaboration to achieve business goals
+                            and deliver solid results.
                         </p>
                         <p>
                             I consider myself a lifelong learner, committed to
@@ -160,7 +160,7 @@ export default function About() {
                                 <i
                                     className={`${skill.iconClass} ${skill.hoverColor}`}
                                 ></i>
-                                <p className="text-[.8rem] pt-1">
+                                <p className="font-kiona text-[.8rem] pt-1">
                                     {skill.name}
                                 </p>
                             </div>

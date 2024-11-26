@@ -1,6 +1,4 @@
-import { motion, MotionConfig } from 'framer-motion'
-
-// Button background: rounded-full bg-slate-400/0 transition-colors hover:bg-slate-400/20
+import { motion } from 'framer-motion'
 
 export default function MenuButton({ open, setOpen }) {
     return (
