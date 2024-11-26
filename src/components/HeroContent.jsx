@@ -13,7 +13,7 @@ export default function HeroContent({ darkMode }) {
                     className="w-56 md:w-60 rounded-full"
                 />
                 <div className="text-[#1a3d5e] dark:text-neutral-200 text-center">
-                    <h1 className="font-kiona text-6xl md:text-[6rem] blur-[.5px]">
+                    <h1 className="font-kiona text-5xl md:text-[6rem] blur-[.5px]">
                         DANIEL KIM
                     </h1>
                     <p className="font-sans font-extralight text-sm md:text-lg mt-4 blur-[.4px]">
@@ -25,7 +25,7 @@ export default function HeroContent({ darkMode }) {
                 to="about"
                 smooth={true}
                 duration={500}
-                className="absolute bottom-0 mb-4 max-w-24 md:max-w-28 cursor-pointer"
+                className="absolute bottom-0 mb-16 md:mb-4 max-w-24 md:max-w-28 cursor-pointer"
                 offset={-55}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
