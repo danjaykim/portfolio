@@ -83,7 +83,7 @@ export default function About() {
         <section className="bg-white/50 dark:bg-[#1C2625]/60 py-12 md:py-20">
             <h2
                 className="hidden md:block font-inter
-                text-[#1a3d5e] text-base text-center dark:text-neutral-200 font-medium tracking-widest blur-[.5px] underline underline-offset-8 decoration-1 md:mb-20"
+                text-[#1a3d5e] text-base text-center dark:text-neutral-200 font-medium tracking-widest underline underline-offset-8 decoration-1 md:mb-20"
             >
                 ABOUT ME
             </h2>
@@ -95,7 +95,7 @@ export default function About() {
                     transition={{ duration: 0.6, ease: 'easeIn' }}
                     className="about-content mb-12 md:mb-0 md:w-[50%]"
                 >
-                    <h2 className="md:hidden font-inter font-medium text-[#1a3d5e] text-[1rem] text-center tracking-widest dark:text-neutral-200 blur-[.5px] underline underline-offset-8 mb-10">
+                    <h2 className="md:hidden font-inter font-medium text-[#1a3d5e] text-[1rem] text-center tracking-widest dark:text-neutral-200 underline underline-offset-8 mb-10">
                         ABOUT ME
                     </h2>
                     <h2 className="hidden md:block font-inter text-[#1a3d5e] text-sm text-center tracking-wider dark:text-neutral-200 mb-8">
@@ -142,13 +142,13 @@ export default function About() {
                     }}
                     className="skills-content md:w-[50%]"
                 >
-                    <h2 className="md:hidden font-inter font-medium text-[#1a3d5e] text-[1rem] tracking-widest text-center dark:text-neutral-200 blur-[.5px] underline underline-offset-8 mb-10">
+                    <h2 className="md:hidden font-inter font-medium text-[#1a3d5e] text-[1rem] tracking-widest text-center dark:text-neutral-200 underline underline-offset-8 mb-10">
                         SKILLS
                     </h2>
                     <h2 className="hidden md:block font-inter text-[#1a3d5e] text-sm text-center tracking-wider dark:text-neutral-200 mb-8">
                         TECH SKILLS
                     </h2>
-                    <div className="grid grid-cols-3 md:grid-cols-5 gap-8 font-open text-6xl text-[#1a3d5e] dark:text-neutral-200 text-center blur-[.4px]">
+                    <div className="grid grid-cols-3 md:grid-cols-5 gap-8 font-open text-6xl text-[#1a3d5e] dark:text-neutral-200 text-center">
                         {techSkills.map((skill, index) => (
                             <div
                                 key={skill.name}

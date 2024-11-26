@@ -13,10 +13,10 @@ export default function HeroContent({ darkMode }) {
                     className="w-56 md:w-60 rounded-full"
                 />
                 <div className="text-[#1a3d5e] dark:text-neutral-200 text-center">
-                    <h1 className="font-kiona text-5xl md:text-[6rem] blur-[.5px]">
+                    <h1 className="font-kiona text-5xl md:text-[6rem]">
                         DANIEL KIM
                     </h1>
-                    <p className="font-sans font-extralight text-sm md:text-lg mt-4 blur-[.4px]">
+                    <p className="font-sans font-extralight text-sm md:text-lg mt-4">
                         SOFTWARE ENGINEER
                     </p>
                 </div>
@@ -25,18 +25,18 @@ export default function HeroContent({ darkMode }) {
                 to="about"
                 smooth={true}
                 duration={500}
-                className="absolute bottom-0 mb-16 md:mb-4 max-w-24 md:max-w-28 cursor-pointer"
+                className="absolute bottom-0 mb-40 md:mb-4 max-w-24 md:max-w-28 cursor-pointer"
                 offset={-55}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <div
                     className={`absolute flex flex-col justify-center items-center gap-4 
-                            size-[95px] md:size-[110px] dark:text-neutral-200
+                            text-[#1a3d5e] size-[95px] md:size-[110px] dark:text-neutral-200
                             transition-all duration-500 ease-in-out
                             ${isHovered ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}
                 >
-                    <p className="text-xs font-semibold tracking-widest blur-[.3px]">
+                    <p className="text-xs font-semibold tracking-widest">
                         LEARN MORE
                     </p>
                     <i className="fa-solid fa-angle-down fa-xl"></i>

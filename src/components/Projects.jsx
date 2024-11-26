@@ -20,7 +20,7 @@ function Project({ children }) {
 export default function Projects() {
     return (
         <section className="py-12 md:py-20 bg-[##C9C9C9]/60 dark:bg-neutral-900/70">
-            <h3 className="font-inter font-medium text-base text-center text-[#1a3d5e] mb-10 dark:text-neutral-200 tracking-widest blur-[.5px] underline underline-offset-8 decoration-1 md:mb-20">
+            <h3 className="font-inter font-medium text-base text-center text-[#1a3d5e] mb-10 dark:text-neutral-200 tracking-widest underline underline-offset-8 decoration-1 md:mb-20">
                 PROJECTS
             </h3>
             <div className="container flex flex-col gap-14 md:gap-24 text-[#1a3d5e]">
@@ -77,7 +77,7 @@ export default function Projects() {
                         </a>
                     </div>
                 </Project>
-                <span className="w-full h-1 border-t border-[#1a3d5e] dark:border-neutral-200 blur-[.7px] md:hidden"></span>
+                <span className="w-full h-1 border-t border-[#1a3d5e] dark:border-neutral-200 md:hidden"></span>
                 <Project>
                     <div className="md:w-1/2">
                         <div className="flex items-center gap-2 mb-3">
@@ -121,7 +121,7 @@ export default function Projects() {
                         allowFullScreen
                     />
                 </Project>
-                <span className="w-full h-1 border-t border-[#1a3d5e] dark:border-neutral-200 blur-[.7px] md:hidden"></span>
+                <span className="w-full h-1 border-t border-[#1a3d5e] dark:border-neutral-200 md:hidden"></span>
                 <Project>
                     <div className="md:w-1/2">
                         <div className="flex items-center gap-2 mb-3">
