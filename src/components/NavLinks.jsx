@@ -26,7 +26,7 @@ export default function NavLinks({
                             className={
                                 isMobile
                                     ? 'font-kiona text-2xl font-bold tracking-widest text-[#1a3d5e] hover:text-slate-900 dark:text-neutral-300 dark:hover:text-neutral-100 cursor-pointer'
-                                    : `font-kiona font-bold text-[.9rem] text-[#1a3d5e]
+                                    : `font-semibold text-xs text-[#1a3d5e]
                                         py-2 px-4 rounded-lg dark:text-neutral-200 cursor-pointer
                                         ${navBackground ? 'dark:hover:bg-neutral-600/30 hover:bg-neutral-200/50' : 'hover:bg-white/20 dark:hover:bg-neutral-700/40'}`
                             }
