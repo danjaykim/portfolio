@@ -65,8 +65,8 @@ export default function Projects() {
                                 customers.
                             </p>
                             <p>
-                                Hospital and Website Launch - Official Launch
-                                Date to Be Confirmed
+                                Hospital and Website - Official Launch Date to
+                                Be Confirmed
                             </p>
                         </div>
                     </div>
