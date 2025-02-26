@@ -62,7 +62,11 @@ export default function Projects() {
                                 appointment scheduling, staff management, and
                                 role-based access control, ensuring a smooth and
                                 user-friendly experience for both staff and
-                                customers
+                                customers.
+                            </p>
+                            <p>
+                                Hospital and Website Launch - Official Launch
+                                Date to Be Confirmed
                             </p>
                         </div>
                     </div>
