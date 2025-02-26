@@ -124,7 +124,7 @@ export default function About() {
                             I consider myself a lifelong learner, committed to
                             continuous growth and improvement. My focus is on
                             developing software solutions that drive business
-                            success, and I'm always looking to work with
+                            success, and I&apos;m always looking to work with
                             like-minded people who share my passion for creating
                             innovative products and services.
                         </p>

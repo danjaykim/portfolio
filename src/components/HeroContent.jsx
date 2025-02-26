@@ -20,36 +20,6 @@ export default function HeroContent({ darkMode }) {
                         SOFTWARE ENGINEER
                     </p>
                 </div>
-                {/* <Link
-                    to="about"
-                    smooth={true}
-                    duration={500}
-                    className="max-w-24 md:max-w-28 cursor-pointer"
-                    offset={-55}
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                >
-                    <div
-                        className={`absolute flex flex-col justify-center items-center gap-4 
-                            text-[#1a3d5e] size-[95px] md:size-[110px] dark:text-neutral-200
-                            transition-all duration-500 ease-in-out
-                            ${isHovered ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}
-                    >
-                        <p className="text-xs font-semibold tracking-widest">
-                            LEARN MORE
-                        </p>
-                        <i className="fa-solid fa-angle-down fa-xl"></i>
-                    </div>
-                    <img
-                        src={
-                            darkMode
-                                ? '/dark_logo_transparent.png'
-                                : '/logo_transparent.png'
-                        }
-                        alt="Learn More Logo"
-                        className={`transition-all duration-500 ease-in-out ${isHovered ? 'opacity-0 scale-90' : 'opacity-100 scale-100'}`}
-                    />
-                </Link> */}
             </div>
             <Link
                 to="about"
@@ -78,7 +48,7 @@ export default function HeroContent({ darkMode }) {
                             : '/logo_transparent.png'
                     }
                     alt="Learn More Logo"
-                    className={`transition-all duration-500 ease-in-out ${isHovered ? 'opacity-0 scale-90' : 'opacity-100 scale-100'}`}
+                    className={`-mb-3 transition-all duration-500 ease-in-out ${isHovered ? 'opacity-0 scale-90' : 'opacity-100 scale-100'}`}
                 />
             </Link>
         </main>

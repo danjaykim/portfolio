@@ -28,6 +28,63 @@ export default function Projects() {
                     <div className="md:w-1/2">
                         <div className="flex items-center gap-2 mb-3">
                             <a
+                                href="https://github.com/danjaykim/heritage-animal-hospital"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <p className="font-inter text-[1rem] dark:text-stone-200 underline underline-offset-8 decoration-1">
+                                    Heritage Animal Hospital of Northwest
+                                    Arkansas
+                                </p>
+                            </a>
+                            <a
+                                href="https://github.com/danjaykim/heritage-animal-hospital"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="devicon-github-original text-2xl dark:text-neutral-200"></i>
+                            </a>
+                        </div>
+                        <div className="font-open text-[.95rem] dark:text-stone-300 font-light tracking-wide leading-relaxed">
+                            <p className="mb-4">
+                                Heritage Animal Hospital of Northwest Arkansas
+                                is a veterinary web app designed to streamline
+                                clinic operations and enhance the pet owner
+                                experience. It features an intuitive React and
+                                Tailwind CSS front-end, enriched with Framer
+                                Motion for smooth animations. The app allows pet
+                                owners to easily book appointments and access
+                                helpful information about services and staff.
+                                The back-end is powered by FastAPI and
+                                PostgreSQL for secure and efficient data
+                                management, while the system is fully
+                                containerized with Docker. It enables seamless
+                                appointment scheduling, staff management, and
+                                role-based access control, ensuring a smooth and
+                                user-friendly experience for both staff and
+                                customers
+                            </p>
+                        </div>
+                    </div>
+                    <div className="w-full md:w-1/2">
+                        <a
+                            href="https://github.com/danjaykim/heritage-animal-hospital"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="/HeritageOfNWA.webp"
+                                alt="Heritage of NWA Hero Content"
+                                className="rounded"
+                                loading="lazy"
+                            />
+                        </a>
+                    </div>
+                </Project>
+                <Project>
+                    <div className="md:w-1/2">
+                        <div className="flex items-center gap-2 mb-3">
+                            <a
                                 href="https://github.com/Sigma-Unity-CRM/CRM-Project"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -57,9 +114,10 @@ export default function Projects() {
                             </p>
                             <p>
                                 UnityCRM is currently under active development.
-                                We're excited about the potential impact this
-                                tool will have on making CRM more accessible and
-                                effective for SMBs. Stay tuned for updates!
+                                We&apos;re excited about the potential impact
+                                this tool will have on making CRM more
+                                accessible and effective for SMBs. Stay tuned
+                                for updates!
                             </p>
                         </div>
                     </div>
@@ -73,6 +131,7 @@ export default function Projects() {
                                 src="/CRM_Schema.png"
                                 alt="SigmaCRM project schema"
                                 className="aspect-[16/9] rounded"
+                                loading="lazy"
                             />
                         </a>
                     </div>
@@ -101,7 +160,7 @@ export default function Projects() {
                         <p className="font-open text-[.95rem] dark:text-stone-300 font-light tracking-wide leading-relaxed">
                             MovieKnight is an application for movie enthusiasts
                             who want to take cinematic experience to the next
-                            level. Whether you're tracking movies watched,
+                            level. Whether you&apos;re tracking movies watched,
                             curating personalized watchlists, or sharing
                             reviews, MovieKnight keeps everything organized in
                             one easy-to-use platform. With the integration of
